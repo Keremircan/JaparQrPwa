@@ -72,6 +72,4 @@ const loadingContainerStyle: React.CSSProperties = {
   backgroundColor: "#f8fafc",
 };
 
-// export default function App() {
-//   return <h1 style={{ color: 'red', padding: 20 }}>TEST: React Çalışıyor!</h1>;
-// }
+
