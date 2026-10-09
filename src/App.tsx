@@ -69,7 +69,7 @@ const loadingContainerStyle: React.CSSProperties = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  backgroundColor: "#f8fafc",
+  backgroundColor: "#ffffff",
 };
 
 
