@@ -9,6 +9,10 @@ export const pool = new Pool({
   database: process.env.DB_NAME,
   password: process.env.DB_PASSWORD,
   port: Number(process.env.DB_PORT) || 5432,
+  ssl: {
+    // Supabase bulut veritabanına bağlanmak için bu satır zorunludur:
+    rejectUnauthorized: false,
+  },
 });
 
 pool.on('connect', () => {
