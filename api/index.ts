@@ -5,7 +5,7 @@ import express, { type Request, type Response } from 'express';import cors from 
 import CryptoJS from 'crypto-js';
 import * as OTPAuth from 'otpauth';
 import bcrypt from 'bcryptjs';
-import { pool } from './db';
+import { pool } from './db.ts';
 
 const app = express();
 app.use(cors());
