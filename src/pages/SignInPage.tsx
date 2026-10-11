@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Loader2 } from 'lucide-react';
 import { useSession } from '../context/useSession';
@@ -26,8 +26,8 @@ export default function SignInPage() {
     }
   };
 
-  const handleLogin = async (e?: FormEvent) => {
-    if (e) e.preventDefault();
+  const handleLogin = async (e: React.SubmitEvent<HTMLFormElement>) => {
+    e.preventDefault();
     setErrorMessage('');
 
     if (!employeeCode.trim() || !password.trim()) {
